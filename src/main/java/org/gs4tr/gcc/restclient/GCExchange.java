@@ -113,8 +113,7 @@ public class GCExchange {
         }
 
         this.config = conf;
-        if (!this.config.getApiUrl()
-                .endsWith("/")) {
+        if (!this.config.getApiUrl().endsWith("/")) {
             this.config.setApiUrl(this.config.getApiUrl() + "/");
         }
 
