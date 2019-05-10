@@ -153,6 +153,16 @@ public class GCExchange {
     }
     
     /**
+     * Adds a custom HTTP to be set in all future API calls.
+     * 
+     * @param name header name
+     * @param value header value
+     */
+    public void addCustomHeader(String name, String value) {
+        config.addCustomHeader(name, value);
+    }
+    
+    /**
      * Gets listing of all connectors available to the user
      * 
      * @return List of {@link Connector}
