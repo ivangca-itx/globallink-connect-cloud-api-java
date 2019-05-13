@@ -31,7 +31,7 @@ public class MultipartUtility {
     public MultipartUtility(URL requestURL, GCConfig config)
             throws IOException {
          
-        boundary = "===" + System.currentTimeMillis() + "===";
+        boundary = "#" + System.currentTimeMillis() + "#";
         httpConn = (HttpsURLConnection) openConnection(requestURL);
         httpConn.setRequestMethod("POST");
         httpConn.setRequestProperty("connector_key", config.getConnectorKey());
