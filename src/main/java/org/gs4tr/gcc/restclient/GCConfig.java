@@ -93,7 +93,7 @@ public class GCConfig {
     }
 
     public void addCustomHeader(String name, String value) {
-        customHeaders.put(name, name);
+        customHeaders.put(name, value);
     }
 
     public static Builder builder() {
