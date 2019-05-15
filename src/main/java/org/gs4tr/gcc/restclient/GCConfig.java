@@ -93,7 +93,7 @@ public class GCConfig {
     }
 
     public void addCustomHeader(String name, String value) {
-        customHeaders.put(name, name);
+        customHeaders.put(name, value);
     }
 
     public static Builder builder() {
@@ -101,14 +101,12 @@ public class GCConfig {
     }
 
     public static class Builder {
-
         private String apiUrl;
         private String userName;
         private String password;
         private String connectorKey;
         private String userAgent;
         private Map<String, String> customHeaders = new HashMap<>();
-
         private Builder() {
         }
 
